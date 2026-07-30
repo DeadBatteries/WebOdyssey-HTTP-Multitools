@@ -1,7 +1,7 @@
-from modules.Utils.selectOptions import select_number
-from modules.Requests.History.history import history
-from modules.Requests.History.showHistory import showHistory
-from modules.Requests.requestOptions import requestOptions
+from Utils.selectOptions import select_number
+from Models.History.history import history
+from Interface.showHistory import showHistory
+from Core.Requests.requestOptions import requestOptions
 
 def historyOptions():
 
@@ -32,7 +32,6 @@ History Options:
                 showHistory([g])
 
                 requestOptions(g)
-
 
             case 0:
 

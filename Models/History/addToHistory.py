@@ -1,5 +1,5 @@
-from modules.Requests.History.history import history
-from modules.Utils.format.format_response import format_b
+from Models.History.history import history
+from Utils.format.format_response import format_b
 
 def addToHistory(r):
 
@@ -15,7 +15,8 @@ def addToHistory(r):
         "headers":r.headers,
         "encoding":r.encoding,
         "length":format_b(len(r.content)),
-        "response":r
+        "response":r,
+        "cookies":r.cookies
     
     }
 

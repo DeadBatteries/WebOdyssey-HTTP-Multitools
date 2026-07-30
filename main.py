@@ -1,14 +1,11 @@
-from modules.Requests.request import get_r
-from modules.Interface.interface import appInterface, appBanner
-from modules.Utils.selectOptions import select_number
-from modules.Requests.History.addToHistory import addToHistory
-from modules.Requests.History.history import history
-from modules.Requests.History.showHistory import showHistory
-from modules.Requests.History.historyOptions import historyOptions
+from Core.Requests.request import get_r
+from Interface.interface import appInterface, appBanner
+from Utils.selectOptions import select_number
+from Models.History.addToHistory import addToHistory
+from Models.History.history import history
+from Interface.showHistory import showHistory
+from Models.History.historyOptions import historyOptions
 
-def showBanner():
-    appBanner()
-    
 def initApp():
 
     while True:
